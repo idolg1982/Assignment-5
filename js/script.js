@@ -8,7 +8,7 @@ let department =    $("department");
 let submitButton =  $("submit")
 let empForm =       $("empForm");
 
-$(empForm).addEventListener('click', () => {
+    empForm.addEventListener('submit', (event) => {
     event.preventDefault();
     console.log('8-Digit Employee ID:', employeeID.value);
     console.log('Full Name:', fullName.value);
